@@ -158,4 +158,10 @@ module.exports = {
     },
   },
 };
+module.exports = {
+  url: 'https://sansayna.github.io',
+  baseUrl: '/docusaurus/',
+  projectName: 'docusaurus',
+  organizationName: 'sansayna',
+};
 export default config;
