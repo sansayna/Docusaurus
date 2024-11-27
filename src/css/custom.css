@@ -1,30 +1,79 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global Custom CSS for Docusaurus
+ * This palette enhances the visibility of blue elements and provides balanced contrast.
  */
 
-/* You can override the default Infima variables here. */
+/* Light Mode Colors */
 :root {
-  --ifm-color-primary: #1a73e8;
-  --ifm-color-primary-dark: #fbbc05;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #0057b8; /* Strong Blue for Primary Elements */
+  --ifm-color-primary-dark: #004096; /* Darker Blue for Hover and Active States */
+  --ifm-color-primary-light: #007fff; /* Lighter Blue for Highlights */
+  --ifm-color-secondary: #ffcc00; /* Vibrant Yellow for Secondary Highlights */
+
+  /* Background Colors */
+  --ifm-background-color: #ffffff; /* Pure White Background */
+  --ifm-background-color-secondary: #f5f5f5; /* Light Gray for Sections */
+
+  /* Text Colors */
+  --ifm-font-color-base: #333333; /* Neutral Dark Gray for Body Text */
+  --ifm-font-color-secondary: #555555; /* Softer Gray for Subtext */
+
+  /* Code and Syntax Highlighting */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 87, 184, 0.1); /* Subtle Blue for Code Highlights */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Mode Colors */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #007fff; /* Bright Blue for Primary Elements */
+  --ifm-color-primary-dark: #0057b8; /* Stronger Blue for Hover and Active States */
+  --ifm-color-primary-light: #3399ff; /* Lighter Blue for Highlights */
+  --ifm-color-secondary: #ffd700; /* Golden Yellow for Secondary Highlights */
+
+  /* Background Colors */
+  --ifm-background-color: #1a1a1a; /* Dark Gray for Background */
+  --ifm-background-color-secondary: #2a2a2a; /* Slightly Lighter Gray for Sections */
+
+  /* Text Colors */
+  --ifm-font-color-base: #e0e0e0; /* Light Gray for Body Text */
+  --ifm-font-color-secondary: #bfbfbf; /* Softer Gray for Subtext */
+
+  /* Code and Syntax Highlighting */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 127, 255, 0.2); /* Bright Blue for Code Highlights */
+}
+
+/* Navbar Customization */
+.navbar {
+  background-color: var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-color-secondary);
+}
+
+.navbar__link {
+  color: #ffffff; /* White Text for Navbar Links */
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-secondary); /* Highlight Yellow on Hover */
+  text-decoration: underline;
+}
+
+/* Footer Customization */
+.footer {
+  background-color: var(--ifm-color-primary-dark);
+  color: #ffffff; /* White Text in Footer */
+}
+
+.footer__link-item {
+  color: var(--ifm-color-primary-light); /* Lighter Blue for Footer Links */
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-secondary); /* Yellow for Footer Link Hover */
+}
+
+/* Specific Styling for Icons */
+.icon {
+  color: var(--ifm-color-primary); /* Ensure Icons Stay Blue */
+  background-color: var(--ifm-background-color-secondary); /* Subtle Background for Contrast */
+  padding: 0.5rem; /* Add Padding Around Icons */
+  border-radius: 50%; /* Make Background Circular */
 }
